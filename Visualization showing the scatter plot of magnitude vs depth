@@ -1,0 +1,7 @@
+import plotly.express as px
+
+# Create a scatter plot for magnitude vs depth
+fig = px.scatter(df_final, x='magnitude', y='depth', color='magnitude',
+                 labels={'magnitude': 'Magnitude', 'depth': 'Depth (km)'},
+                 title='Scatter Plot of Magnitude vs Depth')
+fig.show()
